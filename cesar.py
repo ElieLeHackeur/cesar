@@ -3,7 +3,7 @@ def code_cesar(nb, code):
     for i in range(len(code)):
         index=code[i]
         index=ord(index)
-        index+=1
+        index+=nb
         index=chr(index)
         fin+=index
     print("Votre phrase chiffrée :", fin)
@@ -13,7 +13,7 @@ def uncode_cesar(nb, code):
     for i in range(len(code)):
         index=code[i]
         index=ord(index)
-        index-=1
+        index-=nb
         index=chr(index)
         fin+=index
     print("Votre phrase déchiffrée :", fin)
